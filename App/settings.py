@@ -5,9 +5,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = "m191007005"
 
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['13.71.44.98', 'api.sochem.org', "127.0.0.1"]
+ALLOWED_HOSTS = ['*']
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -38,6 +38,7 @@ CORS_ORIGIN_WHITELIST = [
     "http://127.0.0.1:8000",
     "https://sochem.org",
     "https://www.sochem.org",
+    "https://sochem.in",
     "https://www.sochem.in",
 ]
 
