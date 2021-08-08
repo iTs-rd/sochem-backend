@@ -15,7 +15,7 @@ from .models import ForumPost, ForumComment, ForumReply, Events, UserExtension
 @authentication_classes([TokenAuthentication])
 @permission_classes([AllowAny])
 def auth(request):
-    CLIENT_ID = '583451575044-i4kah52p22nlhsv1e6nstfknr1sa1qod.apps.googleusercontent.com'
+    CLIENT_ID = '210191010491-arcear3sgs4vbght2tke3ut0bo89566n.apps.googleusercontent.com'
     token = request.data['token']
     try:
         final = id_token.verify_oauth2_token(token, requests.Request(), CLIENT_ID)
